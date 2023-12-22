@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+  <!-- Ensure all content is within the container -->
+  <h1>Create new Entries</h1>
+  <form action="/create" method="post">
+    <div class="form-group">
+      <label for="postTitle">Title</label>
+      <input class="form-control" type="text" id="postTitle" name="postTitle" />
+      <label for="postBody">Post</label>
+      <textarea
+        class="form-control"
+        id="postBody"
+        name="postBody"
+        rows="5"
+      ></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Save</button>
+  </form>
+</div>
+<!-- Close the container -->
+
+<%- include("partials/footer"); -%>

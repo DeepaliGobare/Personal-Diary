@@ -1,0 +1,26 @@
+<!-- update.ejs -->
+<%- include("partials/header"); -%>
+
+<div class="container">
+  <h1>Update Your Entry</h1>
+  <form action="/update" method="post">
+    <input type="hidden" name="id" value="<%= id %>" />
+    <div class="form-group">
+      <label for="postTitle">Title</label>
+      <input
+        class="form-control"
+        type="text"
+        id="postTitle"
+        name="postTitle"
+        value="<%= title %>"
+      />
+      <label for="postBody">Post</label>
+      <textarea class="form-control" id="postBody" name="postBody" rows="5">
+<%= content %></textarea
+      >
+    </div>
+    <button class="btn btn-primary" type="submit">Update</button>
+  </form>
+</div>
+
+<%- include("partials/footer"); -%>

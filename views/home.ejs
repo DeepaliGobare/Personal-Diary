@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+  <!-- Ensure all content is within the container -->
+  <h1>Previous Entries</h1>
+
+  <% posts.forEach(function(post){ %>
+  <div class="post-preview">
+    <h2><%= post.title %></h2>
+    <p><%= post.content.substring(0, 50) + " ..." %></p>
+    <a href="/posts/<%= post._id %>">Read More</a>
+    <a href="/update/<%= post._id %>">Update</a>
+    <a href="/delete/<%= post._id %>">Delete</a>
+  </div>
+  <hr />
+  <!-- Add a horizontal line to separate post previews -->
+  <% }) %>
+</div>
+<!-- Close the container -->
+
+<%- include("partials/footer"); -%>

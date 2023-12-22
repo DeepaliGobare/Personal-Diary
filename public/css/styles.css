@@ -1,0 +1,82 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+/* style.css */
+
+body {
+  font-family: "Your Handwritten Font", cursive; /* Update the font to simulate handwriting */
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    #191717,
+    #181717
+  ); /* Use paper-like background */
+  /* Additional styles to mimic aged paper effect */
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.navbar {
+  /* background-color: #333; */
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+/* .navbar-nav li a:hover {
+  color: white;
+} */
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: white;
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+}
+p {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+/* Example CSS for post previews */
+.post-preview {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #f6f5f5;
+  border-radius: 5px;
+}
+
+.post-preview h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-preview p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.post-preview a {
+  display: block;
+  text-decoration: none;
+  color: #007bff; /* Adjust the color to suit your design */
+}
